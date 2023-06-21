@@ -1,4 +1,24 @@
 @media screen and ( min-width:1158px){
     .container {
       max-width: 1158px;}
+      
+      .address-list {
+        flex-direction: row;
+        gap: 40px;
+      }
+
+      .address-link {
+        transition: color var(--transition);
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+
+      .address-link:hover,
+      .address-link:focus {
+        color: var(--second-main-color);
+      }
   }

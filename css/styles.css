@@ -83,6 +83,7 @@ button {
 
 .logo-title {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -90,7 +91,6 @@ button {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 
 .header-logo-first {
@@ -140,7 +140,7 @@ button {
 }
 
 .mobile-menu-btn-icon {
-  stroke: #2E2F42;
+  stroke: var(--title-color);
 }
 
 .mob-menu {
@@ -192,6 +192,7 @@ button {
 .mob-item:not(:last-child) {
   margin-bottom: 40px;
 }
+
 .mob-link {
   font-weight: 700;
   font-size: 36px;
@@ -200,9 +201,11 @@ button {
   text-transform: capitalize;
   color: var(--title-color);
 }
+
 .mob-link:focus {
   color: var(--second-main-color);
 }
+
 .mob-link.current {
   color: var(--second-main-color);
 }
@@ -210,6 +213,7 @@ button {
 .mob-address-item {
   margin-bottom: 40px;
 }
+
 .tel-mob-address-link {
   font-weight: 700;
   font-size: 36px;
@@ -266,14 +270,16 @@ button {
 .header-container {
   display: flex;
   align-items: center;
+  position: relative;
   height: 70px;
 }
 
 .header-section {
-   border-bottom: 1px solid #e7e9fc;
+  background: #ffffff;
+  border-bottom: 1px solid var(--color-btn-white);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  }
+}
 
 .header-nav {
   display: flex;
@@ -281,9 +287,7 @@ button {
 }
 
 .nav-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  display: none;
 }
 
 .nav-item {
@@ -322,6 +326,7 @@ button {
   background-color: var(--second-main-color);
   border-radius: 2px;
 }
+
 .header-link:hover:after,
 .header-link:focus:after,
 .header-link.current:after {
@@ -329,30 +334,8 @@ button {
 }
 
 .address {
-  font-style: normal;
-  display: flex;
-  margin-left: auto;
-}
-
-.address-list {
-  display: flex;
-  gap: 40px;
-}
-.address-item {
-}
-.address-link {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: var(--tipical-line-height);
-  letter-spacing: 0.02em;
-  color: inherit;
-  transition: color var(--transition);
-}
-
-.address-link:hover,
-.address-link:focus {
-  color: var(--second-main-color);
-}
+    display: none;
+  }
 
 /*---------------HERO---------------*/
 
