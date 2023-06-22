@@ -228,7 +228,7 @@
       }
 
       /*---------------MENU BUTTON---------------*/
-      
+
       .section-portfoloi {
         padding-top: 64px;
         padding-bottom: 96px;
@@ -243,6 +243,26 @@
         justify-content: start;
       }
     
+      .gallery-item {
+        width: calc((100% - 24px) / 2);
+      }
+
+      /*---------------GALLERY---------------*/
+
+      .section-portfolio {
+        padding-top: 64px;
+        padding-bottom: 96px;
+      }
+
+      .btn-list {
+        justify-content: center;
+      }
+
+      .gallery-list {
+        column-gap: 24px;
+        justify-content: start;
+      }
+
       .gallery-item {
         width: calc((100% - 24px) / 2);
       }

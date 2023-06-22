@@ -157,9 +157,9 @@
   background: var(--title-color);
 }
 
-/*---------------MENU BUTTON---------------*/
+/*---------------GALLERY---------------*/
 
-.section-portfoloi {
+.section-portfolio {
   padding-top: 100px;
   padding-bottom: 120px;
 }
@@ -171,5 +171,6 @@
 .gallery-item {
   width: calc((100% - 48px) / 3);
 }
+
 
   }
