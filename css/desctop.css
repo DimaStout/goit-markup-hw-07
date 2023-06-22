@@ -21,4 +21,155 @@
       .address-link:focus {
         color: var(--second-main-color);
       }
+
+      /*---------------HERO---------------*/
+
+      .section-hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        align-items: center;
+        margin: 0 auto;
+    
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-animation: kenburns-top 2000ms ease-out reverse both;
+        animation: kenburns-top 2000ms ease-out reverse both;
+      }
+    
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .section-hero {
+          background-image: linear-gradient(
+              rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/people-office-2x.jpg);
+        }
+      }
+    
+      .headline {
+        max-width: 496px;
+        margin-bottom: 48px;
+        font-size: 56px;
+        line-height: 1.07;
+      }
+
+      /*---------------LIST OF FEATURES---------------*/
+
+      .section-features {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+
+      .features-list {
+        flex-direction: none;
+        gap: 24px;
+        flex-wrap: nowrap;
+      }
+      
+      .features-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 264px;
+        height: 112px;
+        background: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+      }
+      
+      .page-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+      }
+      
+      .features-text {
+        max-width: 264px;
+      }
+
+      /*---------------OUR PRODUCTS---------------*/
+
+.product-section {
+  padding-bottom: 120px;
+}
+
+.body-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-color);
+  margin-bottom: 72px;
+}
+.product-list {
+  display: flex;
+  gap: 24px;
+}
+.product-item {
+  width: calc((100% - 48px) / 3);
+}
+
+/*---------------OUR TEAM---------------*/
+
+.team-container {
+  padding: 0 15px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+}
+
+/*---------------CUSTOMERS---------------*/
+
+.customers-container {
+  padding: 0 15px;
+}
+
+.customers-item {
+  width: calc((100% - 80px) / 6);
+}
+
+/*---------------FOOTER---------------*/
+
+.footer-container {
+  padding: 0 15px;
+  justify-content: space-between;
+  width: 1128px;
+  background: var(--title-color);
+}
+
+/*---------------MENU BUTTON---------------*/
+
+.section-portfoloi {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.btn-list {
+  margin-bottom: 72px;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+
   }
