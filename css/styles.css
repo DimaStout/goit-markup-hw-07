@@ -1107,4 +1107,12 @@ button {
   .modal {
     width: 95%;
   }
+
+  .btn-portfolio{
+    font-size: 12px;
+  }
+
+  .gallery-title{
+    font-size: 16px;
+  }
 }
