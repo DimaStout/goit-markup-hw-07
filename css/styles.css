@@ -32,6 +32,7 @@ ol {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -343,11 +344,12 @@ button {
   padding-bottom: 112px;
   align-items: center;
   margin: 0 auto;
+  
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
     url(../images/people-office-mob-1x.jpg);
-  max-width: 1440px;
+  /* max-width: 1440px; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -368,20 +370,21 @@ button {
 
 .headline {
   font-size: 36px;
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 88px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 320px;
 }
 
 .btn-hero {
   display: block;
-  padding: 16px 32px;
-  margin: 0 auto;
+  /* padding: 16px 32px; */
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 4px;
   min-width: 169px;
   height: 56px;
@@ -395,7 +398,8 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   background: var(--first-main-color);
-  /* cursor: pointer; */
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*---------------LIST OF FEATURES---------------*/
@@ -409,30 +413,29 @@ button {
 
 .features-list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 72px;
-  flex-direction: column;
 }
 
 .features-item {
 }
 
 .page-subtitle {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 8px; 
+  align-items: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: var(--title-color);
-  margin-bottom: 8px;
-  justify-content: center;
-  display: flex;
+  color: var(--title-color);   
 }
 
 .features-text {
   font-size: 16px;
   line-height: var(--tipical-line-height);
   letter-spacing: 0.02em;
-  width: 396px;
 }
 
 .features-logo {
@@ -854,7 +857,9 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 165px;
+  margin: 0 auto;
+
+  max-width: 165px;
   height: 40px;
   padding: 8px 24px;
   background-color: var(--first-main-color);
